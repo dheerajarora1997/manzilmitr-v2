@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/b04da06128.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+    <script>
+      fetch("../header.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("header").innerHTML = data));
+
+      fetch("../footer.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+
+      function scrollReviews(direction) {
+        const slider = document.getElementById("reviewSlider");
+        slider.scrollLeft += direction * 300; // scrolls by 300px each arrow click
+      }
+    </script>
+    <link rel="stylesheet" href="/style/css/pages/itinerary.css" />
+    <title>Manzil Mitr</title>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <nav aria-label="breadcrumb" class="breadcrumb-wrapper py-5">
+      <div class="container py-5">
+        <div
+          class="breadcrumb-container d-flex justify-content-between align-items-center"
+        >
+        <div class="">
+          <h3 class="">Itinerary</h3>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 text-white">
+              <li class="breadcrumb-item">
+                <a class="text-white text-decoration-none" href="/index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item active text-white" aria-current="page">
+                Itinerary
+              </li>
+            </ol>
+        </div>
+      </div>
+    </nav>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="mb-4">Itinerary Page</h2>
+            <p>
+              Explore our diverse range of itineraries designed to make your travel planning effortless. Whether you're seeking adventure, relaxation, or cultural immersion, we have the perfect itinerary for you. Each itinerary is thoughtfully crafted to include must-see destinations, local experiences, and practical tips to ensure a memorable journey.
+            </p>
+            <div class="row my-4">
+                <div class="col-sm-12 col-md-3">
+                    <div class="card border-0 shadow">
+                        Itinerary 1
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="card border-0 shadow">
+                        Itinerary 1
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="card border-0 shadow">
+                        Itinerary 1
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="card border-0 shadow">
+                        Itinerary 1
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+  </body>
+</html>
