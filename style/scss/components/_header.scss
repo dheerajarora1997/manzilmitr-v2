@@ -1,0 +1,121 @@
+@import "../abstracts/variable.scss";
+
+.bar {
+  background-color: $primary;
+  height: 30px;
+  color: white;
+  padding-top: 5px;
+  text-align: right;
+  padding-right: 30px;
+}
+
+header {
+  background: #ffffff;
+  color: rgb(6, 2, 63);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  li {
+    list-style: none;
+  }
+  a {
+    padding: 10px !important;
+    text-decoration: none;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .nav-links a,
+  .dropbtn {
+    color: $primary;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-links > li {
+  position: relative;
+}
+
+.dropdown-content {
+  @media only screen and (min-width: 991px) {
+    display: none;
+    position: absolute;
+  }
+  background: #ffffff;
+  min-width: 160px;
+  left: 0;
+  top: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.dropdown-content a {
+  padding:  8px 10px !important;
+  white-space: nowrap;
+  display: inline-block;
+  &:hover{
+    background-color: $primary;
+    color: white;
+    width: 100%;
+  }
+}
+
+/* -------- Desktop Hover Behavior -------- */
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Hide mobile click labels */
+  .dropdown input,
+  .dropbtn {
+    cursor: default;
+  }
+}
+
+/* -------- Mobile Click Behavior -------- */
+@media (max-width: 767px) {
+  .menu-icon {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: $primary;
+  }
+
+  .nav-links {
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    right: 0;
+    top: 100px;
+    background: #ffffff;
+    display: none;
+    padding-bottom: 10px;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  /* Dropdowns open via checkbox click */
+  .dropdown input:checked + .dropbtn + .dropdown-content {
+    display: block;
+    position: static; /* So it expands inside menu */
+    background: #222;
+  }
+
+  /* Show dropdown toggle text as clickable */
+  .dropbtn {
+    cursor: pointer;
+  }
+}

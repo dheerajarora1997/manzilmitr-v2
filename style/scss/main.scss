@@ -1,0 +1,14 @@
+@import "./getBootstrap.scss";
+@import "./abstracts/helper.scss";
+
+@import "./base/typography.scss";
+@import "./components/scrollbar.scss";
+
+@import "./components/footer.scss";
+@import "./components/header.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

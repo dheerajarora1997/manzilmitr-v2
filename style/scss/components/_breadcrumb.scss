@@ -1,0 +1,21 @@
+.breadcrumb-wrapper {
+  width: 100%;
+  background: url("/assets/Photo1.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+  }
+  .breadcrumb-container {
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/b04da06128.js"></script>
+    <style></style>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="bar">
+      <i class="fas fa-envelope"></i>
+      <span class="icon-text">hello@manzilmitr.com</span> &nbsp;&nbsp;
+
+      <i class="fas fa-phone"></i>
+      <span class="icon-text">+91 98107 52174</span>
+    </div>
+    <header class="p-0">
+      <nav class="navbar w-100 navbar-expand-lg">
+        <div class="container">
+          <a href="index.html" class="p-2"
+            ><img src="/assets/logo-min.png" width="auto" height="45px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Manzil Mitr
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="dropdown">
+                  <label for="drop-1" class="dropbtn">Weekend Getaways</label>
+
+                  <ul class="dropdown-content p-0">
+                    <li><a href="#">Manali Sissu Kasol</a></li>
+                    <li><a href="#">Jibhi Tirthan</a></li>
+                    <li><a href="#">Kasol Kheerganga</a></li>
+                    <li><a href="#">Mcleodganj Triund</a></li>
+                    <li><a href="#">Mcleodganj Bir Billing</a></li>
+                    <li><a href="#">Chopta Tungnath</a></li>
+                    <li><a href="#">Chakrata</a></li>
+                    <li><a href="#">Kanatal</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <label for="drop-1" class="dropbtn">Backpacking Tours</label>
+
+                  <ul class="dropdown-content p-0">
+                    <li><a href="#">Spiti Valley</a></li>
+                    <li><a href="#">Leh Ladakh</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <label for="drop-2" class="dropbtn">Spiritual Tours</label>
+
+                  <ul class="dropdown-content p-0">
+                    <li><a href="#">Chopta Tungnath</a></li>
+                    <li><a href="#">Kedarnath</a></li>
+                    <li><a href="#">Badrinath</a></li>
+                  </ul>
+                </li>
+                <li class="p-2"><a class="text-decoration-none" href="About Us.html">About Us</a></li>
+                <li class="p-2"><a class="text-decoration-none" href="Contact Us.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!--
+  <header>
+  <nav class="navbar">
+
+    < Mobile menu button >
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <ul class="nav-links">
+
+      <li><a href="#">Home</a></li>
+
+      < Dropdown 1 >
+      <li class="dropdown">
+        <label for="drop-1" class="dropbtn">Services ▾</label>
+
+        <ul class="dropdown-content p-0">
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Development</a></li>
+          <li><a href="#">SEO</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">About</a></li>
+
+      < Dropdown 2 >
+      <li class="dropdown">
+        <label for="drop-2" class="dropbtn">Products ▾</label>
+
+        <ul class="dropdown-content p-0">
+          <li><a href="#">Product A</a></li>
+          <li><a href="#">Product B</a></li>
+          <li><a href="#">Product C</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Contact</a></li>
+
+    </ul>
+  </nav>
+</header>
+-->
+  </body>
+</html>
