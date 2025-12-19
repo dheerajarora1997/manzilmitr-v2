@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/b04da06128.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("header").innerHTML = data));
+
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+
+     
+    </script>
+    <link rel="stylesheet" href="./style/css/pages/tnc.css" />
+    <title>Terms & Conditions</title>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    
+      <div class="container">
+        <h1>Terms & Conditions</h1>
+        <ul>
+            <li>The advance payment is non-refundable and non-transferable under any circumstances.</li>
+            <li>Full payment for the trip/trek is required before the departure date. Failure to complete payment may result in the cancellation of your trip.</li>
+            <li>A valid government ID must be presented and verified before boarding for the trip.</li>
+            <li>Bookings are non-transferable. Only the individuals listed at the time of booking will be permitted to travel.</li>
+            <li>No refunds or credits will be issued for any inclusions not utilized by the traveler.</li>
+            <li>Travelers are responsible for their valuables and belongings at all times during the trip. The management is not liable for any loss or theft.</li>
+            <li>Departure times for our trips are fixed and will be communicated to travelers in advance. Travelers must report to the pickup location at least 30 minutes before departure. In case of delays, please inform your Trip Leader/Coordinator as soon as possible. Failure to do so may result in trip cancellation.</li>
+            <li>Smoking and drinking are strictly prohibited during travel and in public areas, in consideration of the health and safety of fellow travelers.</li>
+            <li>Any form of misbehavior or nuisance towards our team members, fellow travelers, or vendors will not be tolerated. We are a respectful and responsible travel community dedicated to providing a memorable experience.</li>
+            <li>The Trip Organizer/Coordinator reserves the right to modify the itinerary based on real-time conditions.</li>
+            <li>Our company organizes adventure trips and treks in mountainous regions, which may involve certain risks such as accidents, injuries, loss of life, or financial loss. Neither the company nor its agents or affiliates shall be held responsible for any accidents, injuries, illnesses, deaths, or losses of any kind, including property damage or delays caused by individuals or entities outside our direct control.</li>
+            <li>In the event of injury or illness during the tour, external evacuation or transport services may be required to ensure the participant's safety. Any additional costs incurred for such services will be the responsibility of the participant or their family.</li>
+            <li>We do not provide insurance coverage for medical emergencies, including sickness, injuries, loss of life, theft, or loss of personal valuables.</li>
+            <li>The itinerary may be subject to change due to factors such as weather conditions, road conditions, or the physical abilities of participants. We reserve the right to make necessary adjustments to ensure the safety, comfort, and well-being of all participants.</li>
+        </ul>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

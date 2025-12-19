@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/main.css" />
+    <script src="https://kit.fontawesome.com/b04da06128.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+    <script>
+        fetch("header.html")
+            .then((res) => res.text())
+            .then((data) => (document.getElementById("header").innerHTML = data));
+
+        fetch("footer.html")
+            .then((res) => res.text())
+            .then((data) => (document.getElementById("footer").innerHTML = data));
+
+
+    </script>
+    <link rel="stylesheet" href="./style/css/pages/contact.css" />
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>
+            Thank you for reaching out to <strong>ManzilMitr</strong>.
+            Whether you have questions, feedback, partnership ideas, or travel inquiries—we’re always here to help.
+        </p>
+
+        <!-- Contact Info Section -->
+        <div class="contact-section">
+
+            <div class="info-block">
+                <h3>📩 Email</h3>
+                <p>hello@manzilmitr.com</p>
+            </div>
+
+            <div class="info-block">
+                <h3>📞 Phone</h3>
+                <p>+91 98107 52174</p>
+            </div>
+
+            <div class="info-block">
+                <h3>📍 Office Address</h3>
+                <p>A2-131, sector-5, Rohini, New Delhi - 110085</p>
+            </div>
+
+            <div class="info-block">
+                <h3>🌐 Customer Support Hours</h3>
+                <p>Monday – Saturday: 10:00 AM – 7:00 PM</p>
+            </div>
+        </div>
+
+        <hr style="margin: 40px 0; opacity: 0.3;">
+
+        <!-- Contact Form -->
+        <h2>Send Us a Message</h2>
+        <form action="#">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="6" placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+    <div id="footer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

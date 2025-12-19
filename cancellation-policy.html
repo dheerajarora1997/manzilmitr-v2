@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/b04da06128.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("header").innerHTML = data));
+
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+
+     
+    </script>
+    <link rel="stylesheet" href="./style/css/pages/cancellation.css" />
+    <title>Cancellation Policy</title>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <div class="container">
+
+    <h1>Cancellation Policy</h1>
+
+    <p><span class="subheading">The initial booking amount is non-refundable</span> in the event of any cancellation.</p>
+
+    <ul>
+        <li>
+            <span class="subheading">For cancellations made 30 days or more before the trip's start date:</span>
+            50% of the total trip cost will be retained as cancellation fees.
+        </li>
+
+        <li>
+            <span class="subheading">For cancellations made 15–30 days before the trip's start date:</span>
+            75% of the total trip cost will be charged as cancellation fees.
+        </li>
+
+        <li>
+            <span class="subheading">For cancellations made within 0–15 days of the trip's start date:</span>
+            100% of the total trip cost will be charged as cancellation fees.
+        </li>
+    </ul>
+
+    <p>
+        <span class="subheading">In the event of unforeseen weather conditions or government restrictions:</span>
+        certain activities may need to be canceled. While the operator will make every effort to offer an alternative activity, 
+        <strong>no refunds will be provided</strong> in such cases.
+    </p>
+
+</div>   
+
+    <div id="footer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

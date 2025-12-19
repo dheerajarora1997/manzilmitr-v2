@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/css/main.css" />
+  <script src="https://kit.fontawesome.com/b04da06128.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch("../header.html")
+      .then((res) => res.text())
+      .then((data) => (document.getElementById("header").innerHTML = data));
+
+    fetch("../footer.html")
+      .then((res) => res.text())
+      .then((data) => (document.getElementById("footer").innerHTML = data));
+
+    function scrollReviews(direction) {
+      const slider = document.getElementById("reviewSlider");
+      slider.scrollLeft += direction * 300; // scrolls by 300px each arrow click
+    }
+  </script>
+  <link rel="stylesheet" href="/style/css/pages/itinerary.css" />
+  <title>Jibhi-Tirthan-Manzil Mitr</title>
+</head>
+
+<body>
+  <div id="header"></div>
+  <nav aria-label="breadcrumb" class="breadcrumb-wrapper py-5">
+    <div class="container py-5">
+      <div class="breadcrumb-container d-flex justify-content-between align-items-center">
+        <div class="">
+          <h3 class="">Jibhi Tirthan</h3>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 text-white">
+              <li class="breadcrumb-item">
+                <a class="text-white text-decoration-none" href="/index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="text-white text-decoration-none" href="/Itinerary.html">Itineraries</a>
+              </li>
+              <!--
+              <li class="breadcrumb-item active text-white" aria-current="page">
+                Kasol Kheerganga
+              </li>
+            -->
+            </ol>
+        </div>
+        <a href="" class="btn btn-primary" download>Download</a>
+      </div>
+    </div>
+  </nav>
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Jibhi Tirthan</h2>
+      <p>
+        Escape to the quiet charm of Jibhi and Tirthan, where wooden cottages, hidden waterfalls, and emerald forests
+        create a dreamlike retreat. Wander through misty trails, relax beside crystal-clear rivers, and wake up to
+        birdsong and mountain views. Surrounded by untouched Himalayan landscapes, this serene escape offers slow
+        travel, soulful moments, and a deep connection with nature and peaceful hill life.
+      </p>
+      <div class="row justify-content-between mt-4">
+        <div class="col-sm-12 col-md-6">
+          <h3 class="mb-4">Itinerary</h3>
+          <h4 class="border-bottom py-3">Day 0: Departure to Jibhi</h4>
+          <p>
+            Assemble at pickup point in the evening.
+            Trip leader will give small briefing about the trip followed by Introduction of the group.
+            halt for dinner (own expenses).
+
+          </p>
+
+          <h4 class="border-bottom py-3">Day 1: Jibhi</h4>
+          <p>
+            Reach Jibhi, check-in at hotel and freshen up.
+            Explore Jibhi Waterfall and Mini Thailand. Enjoy the beautiful view of the valley and spend some time at the
+            riverside.
+            Reach back to hotel and enjoy Bonfire and Music followed by dinner and overnight stay at the hotel
+          </p>
+          <h4 class="border-bottom py-3">Day 2: Jalori Pass</h4>
+          <p>
+            Breakfast will be served at the hotel.
+            After Breakfast leave for Jalori Pass.
+            Start your trek to Serolsar lake(4-5 Km) while enjoying 360 degree viewpoint in between.
+            After coming back from the trek, have dinner and overnight stay at hotel.
+          </p>
+
+          <h4 class="border-bottom py-3">Day 3: Tirthan Valley</h4>
+          <p>
+            After Breakfast, check-out from the hotel.
+            Depart for Tirthan Valley and Choiee Waterfall.
+            After coming back enjoy the mesmerizing view of Tirthan valley.
+            After Tirthan Valley exploration, head back to Delhi
+          </p>
+          <h4 class="border-bottom py-3">Inclusions</h4>
+          <span class="m-1 badge bg-primary bg-opacity-25 border border-primary text-primary">✔ Accommodation (2
+            Nights)</span>
+          <span class="m-1 badge bg-primary bg-opacity-25 border border-primary text-primary">✔ 4 Meals(2 Breakfast + 2
+            Dinner)</span>
+          <span class="m-1 badge bg-primary bg-opacity-25 border border-primary text-primary">✔ Transfer to from
+            Delhi/Chandigarh and local transfers</span>
+          <span class="m-1 badge bg-primary bg-opacity-25 border border-primary text-primary">✔ All sightseeing
+            mentioned above</span>
+          <span class="m-1 badge bg-primary bg-opacity-25 border border-primary text-primary">✔ Bonfire and music</span>
+          <span class="m-1 badge bg-primary bg-opacity-25 border border-primary text-primary">✔ Trip coordinator
+          </span>
+
+          <h4 class="border-bottom py-3">Exclusions</h4>
+          <span class="m-1 badge bg-danger bg-opacity-25 border border-danger text-danger">✘ Any other food or beverage
+            charge other than 4 meals mentioned above</span>
+          <span class="m-1 badge bg-danger bg-opacity-25 border border-danger text-danger">✘ Adventure Activities
+            cost</span>
+          <span class="m-1 badge bg-danger bg-opacity-25 border border-danger text-danger">✘ Any entry tickets at the
+            viewpoints</span>
+          <span class="m-1 badge bg-danger bg-opacity-25 border border-danger text-danger">✘ 4X4 vehicle during
+            snowfall</span>
+          <span class="m-1 badge bg-danger bg-opacity-25 border border-danger text-danger">✘ Anything not mentioned in
+            inclusions</span>
+          <span class="m-1 badge bg-danger bg-opacity-25 border border-danger text-danger">✘ Any extra costing due to
+            any natural calamity or any other circumstances beyond our scope</span>
+
+        </div>
+        <div class="col-sm-12 col-md-5">
+
+          <!-- Price Box -->
+          <div class="price-box bg-primary bg-opacity-25 p-3 rounded">
+            <h3>Starting From</h3>
+            <h1>₹6,499</h1>
+
+            <button class="enquire-btn">Enquire Now</button>
+          </div>
+
+          <!-- Call Back Form Below Price Box -->
+          <div class="callback-form bg-primary bg-opacity-25 p-3 rounded">
+            <h3>Request a Call Back</h3>
+            <form>
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="tel" name="phone" placeholder="Phone Number" required>
+              <input type="email" name="email" placeholder="Email Address">
+              <textarea name="message" placeholder="Your Message (optional)"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="table-responsive">
+            <h4 class="border-bottom py-3">Prices</h4>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Room Sharing</th>
+                  <th scope="col">Price (per person)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Double Sharing</td>
+                  <td>₹7,499</td>
+
+                </tr>
+                <tr>
+
+                  <td>Triple Sharing</td>
+                  <td>₹6,999</td>
+                </tr>
+                <tr>
+
+                  <td>Quad Sharing</td>
+                  <td>₹6,499</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="footer"></div>
+</body>
+
+</html>

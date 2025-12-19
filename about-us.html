@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/main.css" />
+    <script src="https://kit.fontawesome.com/b04da06128.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+    <script>
+        fetch("header.html")
+            .then((res) => res.text())
+            .then((data) => (document.getElementById("header").innerHTML = data));
+
+        fetch("footer.html")
+            .then((res) => res.text())
+            .then((data) => (document.getElementById("footer").innerHTML = data));
+
+
+    </script>
+    <link rel="stylesheet" href="./style/css/pages/about.css" />
+    <title>About Us</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <h1>About Us</h1>
+        <div class="content">
+            <div class="text-section">
+                <p>At ManzilMitr, we're more than just a travel company—we're your gateway to unforgettable adventures.
+                    Founded by passionate travelers, we understand that every journey is unique, whether it's a weekend
+                    getaway, a once-in-a-lifetime trip, or a spontaneous escape.</p>
+                <p>Our mission is to inspire, guide, and equip you with everything you need to explore the world with
+                    confidence. From hidden gems and local secrets to must-see landmarks, we curate the best
+                    experiences, and travel tips to make your trip planning seamless and exciting.</p>
+                <p>With over 7 years of on-ground experience, Manzilmitr is your trusted partner in creating exceptional
+                    travel experiences. We've spent years exploring the world, building relationships, and uncovering
+                    the best destinations and experiences to ensure that every journey you take with us is nothing short
+                    of extraordinary.</p>
+                <p>Our extensive knowledge and firsthand experience allows us to cater to travelers of all kinds, from
+                    the intrepid adventurer to the luxury seeker. We specialize in crafting personalized itineraries
+                    that reflect your unique interests and desires, ensuring that every moment of your trip is
+                    meaningful and memorable.</p>
+                <p>Whether you're planning a serene getaway, an action-packed adventure, or a cultural exploration, we
+                    have the expertise to deliver the best experiences tailored just for you. Trust us to guide you on
+                    your next journey, where every detail is thoughtfully planned, and every experience is
+                    unforgettable.</p>
+                <p>Let’s explore the world, one trip at a time.</p>
+            </div>
+            <div class="image-section">
+                <img src="about-image.jpg" alt="Travel with ManzilMitr">
+            </div>
+        </div>
+
+        <!-- Founders Section -->
+        <h1>About Founders</h1>
+        <div class="founders-container">
+            <div class="founder">
+                <h3>Vivek Kumar</h3>
+                <p><!-- Add Vivek's writeup here --></p>
+            </div>
+            <div class="founder">
+                <h3>Muskan</h3>
+                <p><!-- Add Muskan's writeup here --></p>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

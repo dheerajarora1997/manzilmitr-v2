@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/css/main.css" />
-    <script
-      src="https://kit.fontawesome.com/b04da06128.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
-    <script>
-      fetch("../header.html")
-        .then((res) => res.text())
-        .then((data) => (document.getElementById("header").innerHTML = data));
 
-      fetch("../footer.html")
-        .then((res) => res.text())
-        .then((data) => (document.getElementById("footer").innerHTML = data));
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style/css/main.css" />
+  <script src="https://kit.fontawesome.com/b04da06128.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch("../header.html")
+      .then((res) => res.text())
+      .then((data) => (document.getElementById("header").innerHTML = data));
 
-      function scrollReviews(direction) {
-        const slider = document.getElementById("reviewSlider");
-        slider.scrollLeft += direction * 300; // scrolls by 300px each arrow click
-      }
-    </script>
-    <link rel="stylesheet" href="/style/css/pages/itinerary.css" />
-    <title>Manzil Mitr</title>
-  </head>
+    fetch("../footer.html")
+      .then((res) => res.text())
+      .then((data) => (document.getElementById("footer").innerHTML = data));
 
-  <body>
-    <div id="header"></div>
-    <nav aria-label="breadcrumb" class="breadcrumb-wrapper py-5">
-      <div class="container py-5">
-        <div
-          class="breadcrumb-container d-flex justify-content-between align-items-center"
-        >
+    function scrollReviews(direction) {
+      const slider = document.getElementById("reviewSlider");
+      slider.scrollLeft += direction * 300; // scrolls by 300px each arrow click
+    }
+  </script>
+  <link rel="stylesheet" href="/style/css/pages/itinerary.css" />
+  <title>Manzil Mitr</title>
+</head>
+
+<body>
+  <div id="header"></div>
+  <nav aria-label="breadcrumb" class="breadcrumb-wrapper py-5">
+    <div class="container py-5">
+      <div class="breadcrumb-container d-flex justify-content-between align-items-center">
         <div class="">
-          <h3 class="">Itinerary</h3>
+          <h3 class="">All Itineraries</h3>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0 text-white">
               <li class="breadcrumb-item">
@@ -47,38 +43,264 @@
             </ol>
         </div>
       </div>
-    </nav>
-    <section class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Itinerary Page</h2>
-            <p>
-              Explore our diverse range of itineraries designed to make your travel planning effortless. Whether you're seeking adventure, relaxation, or cultural immersion, we have the perfect itinerary for you. Each itinerary is thoughtfully crafted to include must-see destinations, local experiences, and practical tips to ensure a memorable journey.
-            </p>
-            <div class="row my-4">
-                <div class="col-sm-12 col-md-3">
-                    <div class="card border-0 shadow">
-                        Itinerary 1
-                    </div>
+  </nav>
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">All Itineraries</h2>
+      <p>
+        Explore our diverse range of itineraries designed to make your travel planning effortless. Whether you're
+        seeking adventure, relaxation, or cultural immersion, we have the perfect itinerary for you. Each itinerary is
+        thoughtfully crafted to include must-see destinations, local experiences, and practical tips to ensure a
+        memorable journey.
+      </p>
+      <h2 class="border-bottom py-3">Himachal Pradesh</h2>
+      <div class="row my-4">
+        <div class="col-sm-12 col-md-3">
+          <a href="/itinerary/manali-sissu-kasol.html">
+            <div class="card border-0 shadow">
+              <img src="./assets/Photo1.jpg" alt="Paris" />
+              <div class="text-overlay p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="m-0">Manali Sissu Kasol</h3>
+                  <div class="">
+                    <i class="fa-solid fa-clock"></i><span>2N|3D</span>
+                  </div>
                 </div>
-                <div class="col-sm-12 col-md-3">
-                    <div class="card border-0 shadow">
-                        Itinerary 1
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-3">
-                    <div class="card border-0 shadow">
-                        Itinerary 1
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-3">
-                    <div class="card border-0 shadow">
-                        Itinerary 1
-                    </div>
-                </div>
+                <p>From ₹6,499/-</p>
+                <i class="fa-solid fa-location-dot"></i><span>Delhi - Delhi</span>
+              </div>
             </div>
+          </a>
         </div>
-    </section>
+        <div class="col-sm-12 col-md-3">
+          <a href="/itinerary/jibhi-tirthan.html">
+            <div class="card border-0 shadow">
+              <img src="./assets/Photo1.jpg" alt="Paris" />
+              <div class="text-overlay p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="m-0">Jibhi Tirthan</h3>
+                  <div class="">
+                    <i class="fa-solid fa-clock"></i><span>2N|3D</span>
+                  </div>
+                </div>
+                <p>From ₹6,499/-</p>
+                <i class="fa-solid fa-location-dot"></i><span>Delhi - Delhi</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <a href="/itinerary/kasol-kheerganga.html">
+            <div class="card border-0 shadow">
+              <img src="./assets/Photo1.jpg" alt="Paris" />
+              <div class="text-overlay p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="m-0">Kasol Kheerganga</h3>
+                  <div class="">
+                    <i class="fa-solid fa-clock"></i><span>2N|3D</span>
+                  </div>
+                </div>
+                <p>From ₹6,499/-</p>
+                <i class="fa-solid fa-location-dot"></i><span>Delhi - Delhi</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <a href="/itinerary/mcleodganj-triund.html">
+            <div class="card border-0 shadow">
+              <img src="./assets/Photo1.jpg" alt="Paris" />
+              <div class="text-overlay p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="m-0">Mcleodganj Triund</h3>
+                  <div class="">
+                    <i class="fa-solid fa-clock"></i><span>2N|3D</span>
+                  </div>
+                </div>
+                <p>From ₹6999/-</p>
+                <i class="fa-solid fa-location-dot"></i><span>Delhi - Delhi</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
 
-    <div id="footer"></div>
-  </body>
+      <div class="row my-4">
+        <div class="col-sm-12 col-md-3">
+          <a href="/itinerary/mcleodganj-bir-billing.html">
+            <div class="card border-0 shadow">
+              <img src="./assets/Photo1.jpg" alt="Paris" />
+              <div class="text-overlay p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="m-0">Mcleodganj Bir Billing</h3>
+                  <div class="">
+                    <i class="fa-solid fa-clock"></i><span>2N|3D</span>
+                  </div>
+                </div>
+                <p>From ₹6999/-</p>
+                <i class="fa-solid fa-location-dot"></i><span>Delhi - Delhi</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="border-bottom py-3">Uttarakhand</h2>
+      <div class="row my-4">
+        <div class="col-sm-12 col-md-3">
+          <a href="/itinerary/chopta-tungnath.html">
+            <div class="card border-0 shadow">
+              <img src="./assets/Photo1.jpg" alt="Paris" />
+              <div class="text-overlay p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="m-0">Chopta Tungnath</h3>
+                  <div class="">
+                    <i class="fa-solid fa-clock"></i><span>2N|3D</span>
+                  </div>
+                </div>
+                <p>From ₹6,499/-</p>
+                <i class="fa-solid fa-location-dot"></i><span>Delhi - Delhi</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <a href="#">
+            <div class="card border-0 shadow">
+              <img src="./assets/Photo1.jpg" alt="Paris" />
+              <div class="text-overlay p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="m-0">Kanatal Tehri Lake</h3>
+                  <div class="">
+                    <i class="fa-solid fa-clock"></i><span>1N|2D</span>
+                  </div>
+                </div>
+                <p>From ₹5,999/-</p>
+                <i class="fa-solid fa-location-dot"></i><span>Delhi - Delhi</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <a href="#">
+            <div class="card border-0 shadow">
+              <img src="./assets/Photo1.jpg" alt="Paris" />
+              <div class="text-overlay p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="m-0">Chakrata</h3>
+                  <div class="">
+                    <i class="fa-solid fa-clock"></i><span>1N|2D</span>
+                  </div>
+                </div>
+                <p>From ₹5,999/-</p>
+                <i class="fa-solid fa-location-dot"></i><span>Delhi - Delhi</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="border-bottom py-3">Rajasthan</h2>
+      <div class="row my-4">
+        <div class="col-sm-12 col-md-3">
+          <a href="/itinerary/udaipur-kumbalgarh.html">
+            <div class="card border-0 shadow">
+              <img src="./assets/Photo1.jpg" alt="Paris" />
+              <div class="text-overlay p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="m-0">Udaipur Kumbalgarh</h3>
+                  <div class="">
+                    <i class="fa-solid fa-clock"></i><span>2N|3D</span>
+                  </div>
+                </div>
+                <p>From ₹6999/-</p>
+                <i class="fa-solid fa-location-dot"></i><span>Delhi - Delhi</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <a href="/itinerary/jaiselmer-longewala.html">
+            <div class="card border-0 shadow">
+              <img src="./assets/Photo1.jpg" alt="Paris" />
+              <div class="text-overlay p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="m-0">Jaiselmer Longewala</h3>
+                  <div class="">
+                    <i class="fa-solid fa-clock"></i><span>2N|3D</span>
+                  </div>
+                </div>
+                <p>From ₹6999/-</p>
+                <i class="fa-solid fa-location-dot"></i><span>Delhi - Delhi</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="border-bottom py-3">Spiti Valley</h2>
+      <div class="row my-4">
+        <div class="col-sm-12 col-md-3">
+          <a href="#">
+            <div class="card border-0 shadow">
+              <img src="./assets/Photo1.jpg" alt="Paris" />
+              <div class="text-overlay p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="m-0">Spiti valley</h3>
+                  <div class="">
+                    <i class="fa-solid fa-clock"></i><span>6N|7D</span>
+                  </div>
+                </div>
+                <p>From ₹17,999/-</p>
+                <i class="fa-solid fa-location-dot"></i><span>Delhi - Delhi</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="border-bottom py-3">Leh Ladakh</h2>
+      <div class="row my-4">
+        <div class="col-sm-12 col-md-3">
+          <a href="#">
+            <div class="card border-0 shadow">
+              <img src="./assets/Photo1.jpg" alt="Paris" />
+              <div class="text-overlay p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="m-0">Leh Ladakh</h3>
+                  <div class="">
+                    <i class="fa-solid fa-clock"></i><span>7N|8D</span>
+                  </div>
+                </div>
+                <p>From ₹24,999/-</p>
+                <i class="fa-solid fa-location-dot"></i><span>Delhi - Delhi</span>
+              </div>
+            </div>
+          </a> 
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="footer"></div>
+</body>
+
 </html>
