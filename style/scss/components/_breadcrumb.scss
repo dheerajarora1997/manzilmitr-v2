@@ -1,8 +1,10 @@
+@import "../abstracts/variable.scss";
+
 .breadcrumb-wrapper {
   width: 100%;
-  background: url("/assets/Photo1.jpg") no-repeat center center;
-  background-size: cover;
+  background: url("/assets/breadcrumb.jpeg") no-repeat center center;
   position: relative;
+  background-color: rgba($primary, .15);
   &:before {
     content: "";
     position: absolute;
