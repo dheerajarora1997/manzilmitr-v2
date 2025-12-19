@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/b04da06128.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("header").innerHTML = data));
+
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+
+     
+    </script>
+    
+    <title>Terms & Conditions</title>
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+<section class="py-5">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <h1 class="mb-4 text-center">Terms &amp; Conditions</h1>
+
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item">
+                        The advance payment is non-refundable and non-transferable under any circumstances.
+                    </li>
+
+                    <li class="list-group-item">
+                        Full payment for the trip/trek is required before the departure date. Failure to complete payment may result in the cancellation of your trip.
+                    </li>
+
+                    <li class="list-group-item">
+                        A valid government ID must be presented and verified before boarding for the trip.
+                    </li>
+
+                    <li class="list-group-item">
+                        Bookings are non-transferable. Only the individuals listed at the time of booking will be permitted to travel.
+                    </li>
+
+                    <li class="list-group-item">
+                        No refunds or credits will be issued for any inclusions not utilized by the traveler.
+                    </li>
+
+                    <li class="list-group-item">
+                        Travelers are responsible for their valuables and belongings at all times during the trip. The management is not liable for any loss or theft.
+                    </li>
+
+                    <li class="list-group-item">
+                        Departure times for our trips are fixed and will be communicated in advance. Travelers must report to the pickup location at least 30 minutes before departure. Failure to do so may result in trip cancellation.
+                    </li>
+
+                    <li class="list-group-item">
+                        Smoking and drinking are strictly prohibited during travel and in public areas.
+                    </li>
+
+                    <li class="list-group-item">
+                        Any form of misbehavior or nuisance towards team members, fellow travelers, or vendors will not be tolerated.
+                    </li>
+
+                    <li class="list-group-item">
+                        The Trip Organizer/Coordinator reserves the right to modify the itinerary based on real-time conditions.
+                    </li>
+
+                    <li class="list-group-item">
+                        Adventure trips and treks involve inherent risks. The company shall not be held responsible for accidents, injuries, illnesses, deaths, losses, or delays beyond our direct control.
+                    </li>
+
+                    <li class="list-group-item">
+                        In case of injury or illness, external evacuation or medical transport may be required. Any associated costs will be borne by the participant or their family.
+                    </li>
+
+                    <li class="list-group-item">
+                        We do not provide insurance coverage for medical emergencies, theft, loss of life, or personal valuables.
+                    </li>
+
+                    <li class="list-group-item">
+                        The itinerary may change due to weather, road conditions, or participant fitness to ensure safety and well-being.
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div id="footer"></div>
+
+    
+  </body>
+</html>

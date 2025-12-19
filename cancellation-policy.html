@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/b04da06128.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+    
     <script>
       fetch("header.html")
         .then((res) => res.text())
@@ -20,45 +20,59 @@
 
      
     </script>
-    <link rel="stylesheet" href="./style/css/pages/cancellation.css" />
+    
     <title>Cancellation Policy</title>
   </head>
 
   <body>
-    <div id="header"></div>
+   <div id="header"></div>
+
+<section class="py-5">
     <div class="container">
 
-    <h1>Cancellation Policy</h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
 
-    <p><span class="subheading">The initial booking amount is non-refundable</span> in the event of any cancellation.</p>
+                <h1 class="mb-4 text-center">Cancellation Policy</h1>
 
-    <ul>
-        <li>
-            <span class="subheading">For cancellations made 30 days or more before the trip's start date:</span>
-            50% of the total trip cost will be retained as cancellation fees.
-        </li>
+                <p class="mb-3">
+                    <strong>The initial booking amount is non-refundable</strong> in the event of any cancellation.
+                </p>
 
-        <li>
-            <span class="subheading">For cancellations made 15–30 days before the trip's start date:</span>
-            75% of the total trip cost will be charged as cancellation fees.
-        </li>
+                <ul class="list-group list-group-flush mb-4">
 
-        <li>
-            <span class="subheading">For cancellations made within 0–15 days of the trip's start date:</span>
-            100% of the total trip cost will be charged as cancellation fees.
-        </li>
-    </ul>
+                    <li class="list-group-item">
+                        <strong>For cancellations made 30 days or more before the trip's start date:</strong><br>
+                        50% of the total trip cost will be retained as cancellation fees.
+                    </li>
 
-    <p>
-        <span class="subheading">In the event of unforeseen weather conditions or government restrictions:</span>
-        certain activities may need to be canceled. While the operator will make every effort to offer an alternative activity, 
-        <strong>no refunds will be provided</strong> in such cases.
-    </p>
+                    <li class="list-group-item">
+                        <strong>For cancellations made 15–30 days before the trip's start date:</strong><br>
+                        75% of the total trip cost will be charged as cancellation fees.
+                    </li>
 
-</div>   
+                    <li class="list-group-item">
+                        <strong>For cancellations made within 0–15 days of the trip's start date:</strong><br>
+                        100% of the total trip cost will be charged as cancellation fees.
+                    </li>
 
-    <div id="footer"></div>
+                </ul>
 
-    <script src="script.js"></script>
+                <div class="alert alert-warning">
+                    <strong>Unforeseen circumstances:</strong><br>
+                    In the event of weather conditions or government restrictions, certain activities may be canceled.
+                    While alternative activities may be offered,
+                    <strong>no refunds will be provided</strong> in such cases.
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div id="footer"></div>
+
+    
   </body>
 </html>
